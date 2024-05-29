@@ -130,7 +130,7 @@ function draw() {
 }
 
 function clouds() {
-  if (frameCount % 300 === 0) {
+  if (frameCount % 200 === 0) {
     var cloud0 = createSprite(0, 100, 40, 10);
     cloud0.velocity.x = 2;
     cloud0.position.y = random(60, 150);
@@ -146,18 +146,18 @@ function clouds() {
       default:
         break;
     }
-    cloud0.lifetime = 390;
+    cloud0.lifetime = 380;
     cloudGroup.add(cloud0);
   }
 }
 
 function createBox() {
-  if (frameCount % 180 == 0) {
+  if (frameCount % 90 == 0) {
     var box = createSprite(50, 90, 60, 60);
     box.addImage(stoneImg);
     box.y = Math.round(random(0, 150));
     box.x = Math.round(random(100, 350));
-    box.velocityY = 3;
+    box.velocityY = 4;
     box.lifetime = 200;
     stoneGroup.add(box);
   }
