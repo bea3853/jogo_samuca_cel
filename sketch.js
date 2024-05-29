@@ -45,10 +45,10 @@ function setup() {
   heart.addImage(heartImg);
   heart.scale = 0.1;
 
-  gameO = createSprite(200,150);
-  gameO = addImage(gameOver);
-  gameO.scale =  1;
-  gameO.visible  =  false
+  // gameO = createSprite(200,150);
+  // gameO = addImage(gameOver);
+  // gameO.scale =  1;
+  // gameO.visible  =  false
 
 //   chao = createSprite(700, 500, 250, 20);
 //   chao.addImage(chaoImg);
