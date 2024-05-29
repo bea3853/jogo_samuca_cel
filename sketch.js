@@ -120,17 +120,15 @@ function draw() {
     fill(255,255, 255);
     textStyle(BOLD);
     text("Poxa!", 15, 300);
-    text("Tenta de novo", 15, 400);
+    t = text('Ajude o Samuel chegar no S2',15 ,30)
   }
 
   drawSprites();
 
-  while (gameState == 1){
-  t = text('Ajude o Samuel chegar no S2',15 ,30)
-  }
-  else{
-       t = text('Poxa vida! Vamos denovo',15 ,30))
-      }
+
+
+
+
     }
 
 function clouds() {
