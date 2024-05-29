@@ -51,7 +51,7 @@ function setup() {
   pc.addAnimation("pc2", pc2);
   pc.scale = 0.1;
   pc.setCollider("circle", 0, 0, 200);
-  pc.debug = true;
+  // pc.debug = true;
 
   stoneGroup = createGroup();
   cloudGroup = createGroup();
@@ -108,9 +108,7 @@ function draw() {
 
     if (stoneGroup.collide(pc) || cloudGroup.collide(pc)) {
       pc.velocity.y=10 
-    
       som2.play();
-      
       gameState = 2;
     }
   } else if (gameState === 2) {
@@ -126,8 +124,14 @@ function draw() {
   }
 
   drawSprites();
+
+  while (gameState == 1){
   t = text('Ajude o Samuel chegar no S2',15 ,30)
-}
+  }
+  else{
+       t = text('Poxa vida! Vamos denovo',15 ,30))
+      }
+    }
 
 function clouds() {
   if (frameCount % 200 === 0) {
