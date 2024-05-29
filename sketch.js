@@ -120,8 +120,9 @@ function draw() {
     textSize(30);
     fill(255,255, 255);
     textStyle(BOLD);
-    text(perdeu, 15, 300).delay(10);
-    retorna()
+    t = text(perdeu, 15, 300);
+    t.delay(10);
+    retorna();
     
     
 
