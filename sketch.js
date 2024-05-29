@@ -51,7 +51,7 @@ function setup() {
   pc.addAnimation("pc2", pc2);
   pc.scale = 0.1;
   pc.setCollider("circle", 0, 0, 200);
-  // pc.debug = true;
+  pc.debug = true;
 
   stoneGroup = createGroup();
   cloudGroup = createGroup();
@@ -68,7 +68,7 @@ function draw() {
 //   text('E ganhe um convite',450, 340)
 
   if (tree.y > 400) {
-    tree.y = 180;
+    tree.y = 190;
   }
 
   if (gameState === 1) {
