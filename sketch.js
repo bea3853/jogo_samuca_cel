@@ -11,6 +11,7 @@ let pc2;
 let subindo1;
 let t;
 let mariofont;
+let perdeu = "Poxa, Perdeu!"
 
 function preload() {
   cloud1 = loadImage("assets/nuvens 1.png");
@@ -119,7 +120,7 @@ function draw() {
     textSize(30);
     fill(255,255, 255);
     textStyle(BOLD);
-    text("Poxa, Perdeu!", 15, 300);
+    text(perdeu, 15, 300).delay(10);
     retorna()
     
     
