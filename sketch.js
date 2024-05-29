@@ -32,7 +32,7 @@ function preload() {
   heartImg = loadImage("assets/h.png");
   subindo1 = loadAnimation("assets/subindo1.png", "assets/subindo2.png");
   mariofont = loadFont("assets/SuperMario256.ttf")
-  gameOver = loadImage("assets/gameOver.png")
+  gameOver = loadImage("assets/gameOver.jpg")
 }
 
 function setup() {
