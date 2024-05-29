@@ -134,7 +134,7 @@ function draw() {
 function clouds() {
   if (frameCount % 200 === 0) {
     var cloud0 = createSprite(0, 100, 40, 10);
-    cloud0.velocity.x = 2;
+    cloud0.velocity.x = 3;
     cloud0.position.y = random(60, 150);
     cloud0.scale = 0.3;
     var r = Math.round(random(1, 2));
@@ -148,19 +148,19 @@ function clouds() {
       default:
         break;
     }
-    cloud0.lifetime = 380;
+    cloud0.lifetime = 390;
     cloudGroup.add(cloud0);
   }
 }
 
 function createBox() {
-  if (frameCount % 90 == 0) {
+  if (frameCount % 80 == 0) {
     var box = createSprite(50, 90, 60, 60);
     box.addImage(stoneImg);
-    box.y = Math.round(random(0, 150));
-    box.x = Math.round(random(100, 350));
+    box.y = Math.round(random(0, 200));
+    box.x = Math.round(random(10, 350));
     box.velocityY = 4;
-    box.lifetime = 200;
+    box.lifetime = 180;
     stoneGroup.add(box);
   }
 }
@@ -176,7 +176,7 @@ function winmsg() {
   te2.depth = tree
   te.depth = 0.1
   te2.depth = 0.1
-//   text("O Samuca ", 450, 500);
+
   stoneGroup.destroyEach();
   som1.play();
   cloudGroup.velocityX = 0;
