@@ -120,13 +120,13 @@ function draw() {
     fill(255,255, 255);
     textStyle(BOLD);
     text("Poxa!", 15, 300);
-    t = text('Ajude o Samuel chegar no S2',15 ,30)
+
   }
 
   drawSprites();
 
 
-
+    t = text('Ajude o Samuel chegar no S2',15 ,30)
 
 
     }
