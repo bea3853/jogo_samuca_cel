@@ -51,7 +51,7 @@ function setup() {
   pc.addAnimation("pc2", pc2);
   pc.scale = 0.1;
   pc.setCollider("circle", 0, 0, 200);
-  pc.debug = true;
+  // pc.debug = true;
 
   stoneGroup = createGroup();
   cloudGroup = createGroup();
