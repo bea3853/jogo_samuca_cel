@@ -50,8 +50,8 @@ function setup() {
   pc.addAnimation("subindo", subindo1);
   pc.addAnimation("pc2", pc2);
   pc.scale = 0.1;
-  pc.setCollider("circle", 0, 0, 300);
-//   pc.debug = true;
+  pc.setCollider("circle", 0, 0, 200);
+  pc.debug = true;
 
   stoneGroup = createGroup();
   cloudGroup = createGroup();
