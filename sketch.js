@@ -159,7 +159,7 @@ function createBox() {
     box.addImage(stoneImg);
     box.y = Math.round(random(0, 200));
     box.x = Math.round(random(10, 350));
-    box.velocityY = 4;
+    box.velocityY = 7;
     box.lifetime = 180;
     stoneGroup.add(box);
   }
