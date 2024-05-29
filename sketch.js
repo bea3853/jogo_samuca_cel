@@ -12,6 +12,8 @@ let subindo1;
 let t;
 let mariofont;
 let perdeu = "Poxa, Perdeu!"
+let gameOver;
+let gameO;
 
 function preload() {
   cloud1 = loadImage("assets/nuvens 1.png");
@@ -30,6 +32,7 @@ function preload() {
   heartImg = loadImage("assets/h.png");
   subindo1 = loadAnimation("assets/subindo1.png", "assets/subindo2.png");
   mariofont = loadFont("assets/SuperMario256.ttf")
+  gameOver = loadImage("assets/gameOver.png")
 }
 
 function setup() {
@@ -41,6 +44,10 @@ function setup() {
   heart = createSprite(150, 50);
   heart.addImage(heartImg);
   heart.scale = 0.1;
+
+  gameO = createSprite(200,150);
+  gameO = addImage(gameOver);
+  gameO.scale =  1;
 
 //   chao = createSprite(700, 500, 250, 20);
 //   chao.addImage(chaoImg);
@@ -120,9 +127,10 @@ function draw() {
     textSize(30);
     fill(255,255, 255);
     textStyle(BOLD);
-    t = text(perdeu, 15, 300);
-    t.delay(10);
-    retorna();
+    t = text('Poxa, perdeu', 15, 300);
+    
+    location.reload();
+       
     
     
 
@@ -199,7 +207,6 @@ function touchMoved() {
 }
 
 
- function retorna (){
-           location.reload();
-        }
+
+           
 
