@@ -157,7 +157,7 @@ function createBox() {
   if (frameCount % 80 == 0) {
     var box = createSprite(50, 90, 60, 60);
     box.addImage(stoneImg);
-    box.y = Math.round(random(0, 200));
+    box.y = Math.round(random(0, 200)) * 2;
     box.x = Math.round(random(10, 350));
     box.velocityY = 7;
     box.lifetime = 180;
