@@ -48,6 +48,7 @@ function setup() {
   gameO = createSprite(200,150);
   gameO = addImage(gameOver);
   gameO.scale =  1;
+  gameO.visible  =  false
 
 //   chao = createSprite(700, 500, 250, 20);
 //   chao.addImage(chaoImg);
@@ -128,7 +129,8 @@ function draw() {
     fill(255,255, 255);
     textStyle(BOLD);
     t = text('Poxa, perdeu', 15, 300);
-    
+    gameO.visible = true;
+    gameO.delay(5);
     location.reload();
        
     
