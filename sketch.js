@@ -11,9 +11,10 @@ let pc2;
 let subindo1;
 let t;
 let mariofont;
-let perdeu = "Poxa, Perdeu!"
+let perdeu = "Poxa, Perdeu!";
 let gameOver;
 let gameO;
+let customImg; // Variável para a imagem personalizada
 
 function preload() {
   cloud1 = loadImage("assets/nuvens 1.png");
@@ -31,7 +32,8 @@ function preload() {
   stoneImg = loadImage("assets/stone.png");
   heartImg = loadImage("assets/h.png");
   subindo1 = loadAnimation("assets/subindo1.png", "assets/subindo2.png");
-  mariofont = loadFont("assets/SuperMario256.ttf")
+  mariofont = loadFont("assets/SuperMario256.ttf");
+  customImg = loadImage("assets/customImage.png"); // Carregar a imagem personalizada
   // gameOver = loadImage("assets/g.png")
 }
 
@@ -71,10 +73,10 @@ function draw() {
   textSize(25);
   textStyle(BOLD);
   textFont(mariofont);
-  fill("white")
+  fill("white");
 
-  
-//   text('E ganhe um convite',450, 340)
+  // texto adicional
+  text('Ajude o Samuel chegar no S2', 15, 30);
 
   if (tree.y > 400) {
     tree.y = 190;
@@ -83,7 +85,7 @@ function draw() {
   if (gameState === 1) {
     textSize(20);
     textFont(mariofont);
-    fill(255,0,0);
+    fill(255, 0, 0);
     textStyle(BOLD);
 
     if ((keyDown(UP_ARROW) || touches.length > 0) && pc.position.x < 388) {
@@ -110,13 +112,13 @@ function draw() {
     if (heart.isTouching(pc)) {
       pc.changeAnimation("pc2", pc2);
       cloudGroup.destroyEach();
-    //    winmsg();
-    te = text("É isso ai!", 15, 300);
-    te2 = text("Meu convidado!", 15, 400);
+      // winmsg();
+      te = text("É isso ai!", 15, 300);
+      te2 = text("Meu convidado!", 15, 400);
     }
 
     if (stoneGroup.collide(pc) || cloudGroup.collide(pc)) {
-      pc.velocity.y=10 
+      pc.velocity.y = 10;
       som2.play();
       gameState = 2;
     }
@@ -126,25 +128,17 @@ function draw() {
     stoneGroup.destroyEach();
     tree.velocityY = 0;
     textSize(30);
-    fill(255,255, 255);
+    fill(255, 255, 255);
     textStyle(BOLD);
     t = text('Poxa, perdeu', 15, 300);
     // gameO.visible = true;
     // gameO.delay(5);
-    location.reload();
-       
-    
-    
-
+    image(customImg, 0, 0, 1080, 1920); // Mostrar a imagem personalizada
+    // location.reload();
   }
 
   drawSprites();
-
-
-    t = text('Ajude o Samuel chegar no S2',15 ,30)
-
-
-    }
+}
 
 function clouds() {
   if (frameCount % 200 === 0) {
@@ -186,11 +180,10 @@ function winmsg() {
   textStyle(BOLD);
   textFont(mariofont);
 
-
-  te.depth = te2.depth
-  te2.depth = tree
-  te.depth = 0.1
-  te2.depth = 0.1
+  te.depth = te2.depth;
+  te2.depth = tree;
+  te.depth = 0.1;
+  te2.depth = 0.1;
 
   stoneGroup.destroyEach();
   som1.play();
@@ -207,8 +200,3 @@ function touchMoved() {
     return false;
   }
 }
-
-
-
-           
-
