@@ -33,7 +33,7 @@ function preload() {
   heartImg = loadImage("assets/h.png");
   subindo1 = loadAnimation("assets/subindo1.png", "assets/subindo2.png");
   mariofont = loadFont("assets/SuperMario256.ttf");
-  customImg = loadImage("assets/customImage.png"); // Carregar a imagem personalizada
+  customImg = loadImage("assets/customImg.png"); // Carregar a imagem personalizada
   // gameOver = loadImage("assets/g.png")
 }
 
