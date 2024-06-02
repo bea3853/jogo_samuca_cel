@@ -76,7 +76,7 @@ function draw() {
   fill("white");
 
   // texto adicional
-  text('Ajude o Samuel chegar no S2', 15, 30);
+
 
   if (tree.y > 400) {
     tree.y = 190;
@@ -144,6 +144,8 @@ function draw() {
   }
 
   drawSprites();
+
+    text('Ajude o \n Samuel chegar no S2', 15, 30);
 }
 
 function clouds() {
