@@ -136,7 +136,7 @@ function draw() {
     t = text('Poxa, perdeu', 15, 300);
     // gameO.visible = true;
     // gameO.delay(5);
-    image(customImg, 0, 0, 1080, 1920); // Mostrar a imagem personalizada
+    // image(customImg, 0, 0, 1080, 1920); // Mostrar a imagem personalizada
     // location.reload();
       
         window.location.href = "https://bea3853.github.io/cartao_samuca/"; // Substitua pela URL desejada
