@@ -145,7 +145,7 @@ function draw() {
 
   drawSprites();
 
-    text('Leve o Samuca até o S2', 15, 30);
+    text('Leve o Samuca no S2', 15, 30);
 }
 
 function clouds() {
