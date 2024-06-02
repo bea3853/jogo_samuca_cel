@@ -115,6 +115,9 @@ function draw() {
       // winmsg();
       te = text("É isso ai!", 15, 300);
       te2 = text("Meu convidado!", 15, 400);
+        
+        window.location.href = "https://bea3853.github.io/cartao_samuca/"; // Substitua pela URL desejada
+  
     }
 
     if (stoneGroup.collide(pc) || cloudGroup.collide(pc)) {
@@ -135,6 +138,9 @@ function draw() {
     // gameO.delay(5);
     image(customImg, 0, 0, 1080, 1920); // Mostrar a imagem personalizada
     // location.reload();
+      
+        window.location.href = "https://bea3853.github.io/cartao_samuca/"; // Substitua pela URL desejada
+    
   }
 
   drawSprites();
