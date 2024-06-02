@@ -112,11 +112,13 @@ function draw() {
     if (heart.isTouching(pc)) {
       pc.changeAnimation("pc2", pc2);
       cloudGroup.destroyEach();
+       window.location.href = "https://bea3853.github.io/cartao_samuca/"; // Substitua pela URL desejada
+   
       // winmsg();
       te = text("É isso ai!", 15, 300);
       te2 = text("Meu convidado!", 15, 400);
         
-        window.location.href = "https://bea3853.github.io/cartao_samuca/"; // Substitua pela URL desejada
+    
   
     }
 
